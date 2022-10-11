@@ -51,8 +51,7 @@
 		93B7396228F56FBC00E7F77F /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
-				93B7396328F56FBC00E7F77F /* FructusApp.swift */,
-				93B7396528F56FBC00E7F77F /* ContentView.swift */,
+				93B7397128F58B2500E7F77F /* App */,
 				93B7396728F56FBC00E7F77F /* Assets.xcassets */,
 				93B7396928F56FBC00E7F77F /* Preview Content */,
 			);
@@ -65,6 +64,15 @@
 				93B7396A28F56FBC00E7F77F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93B7397128F58B2500E7F77F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				93B7396328F56FBC00E7F77F /* FructusApp.swift */,
+				93B7396528F56FBC00E7F77F /* ContentView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
