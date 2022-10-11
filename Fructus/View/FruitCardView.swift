@@ -21,6 +21,10 @@ struct FruitCardView: View {
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.90), radius: 8, x: 6, y: 8)
                 // FRUIT: TITLE
                 Text("Blueberry")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.9), radius: 2, x: 2, y: 2)
                 // FRUIT: HEADLINE
                 // BUTTON: START
             }//: VStack
