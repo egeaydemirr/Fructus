@@ -15,15 +15,11 @@ struct OnboardingView: View {
 
     var body: some View {
         TabView{
-            ForEach(0..<5) { item in
-                ForEach(fruits[0...12]){ item in
+            ForEach(fruits[0...12]){ item in
                     FruitCardView(fruit: item)
-                }
             }//: LOOP
         }//: TabView
         .tabViewStyle(PageTabViewStyle())
-        .ignoresSafeArea()
-        
     }
 }
 

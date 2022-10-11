@@ -61,12 +61,12 @@
 		93B7396228F56FBC00E7F77F /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
+				93B7397128F58B2500E7F77F /* App */,
 				93B7397E28F5AD3B00E7F77F /* Data */,
 				93B7397B28F5AB5400E7F77F /* Model */,
 				93B7397228F58BEA00E7F77F /* View */,
-				93B7397128F58B2500E7F77F /* App */,
-				93B7396728F56FBC00E7F77F /* Assets.xcassets */,
 				93B7396928F56FBC00E7F77F /* Preview Content */,
+				93B7396728F56FBC00E7F77F /* Assets.xcassets */,
 			);
 			path = Fructus;
 			sourceTree = "<group>";
