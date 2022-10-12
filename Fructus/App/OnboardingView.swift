@@ -20,6 +20,7 @@ struct OnboardingView: View {
             }//: LOOP
         }//: TabView
         .tabViewStyle(PageTabViewStyle())
+        .ignoresSafeArea()
     }
 }
 
