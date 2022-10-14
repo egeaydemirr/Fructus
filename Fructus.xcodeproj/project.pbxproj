@@ -97,8 +97,8 @@
 				93B7396328F56FBC00E7F77F /* FructusApp.swift */,
 				93B7396528F56FBC00E7F77F /* ContentView.swift */,
 				93B7397728F5A5CC00E7F77F /* OnboardingView.swift */,
-				93B7398B28F9719B00E7F77F /* SettingsView.swift */,
 				93B7398328F7541900E7F77F /* FruitDetailView.swift */,
+				93B7398B28F9719B00E7F77F /* SettingsView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
