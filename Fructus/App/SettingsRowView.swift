@@ -34,8 +34,15 @@ struct SettingsRowView: View {
 //MARK: PREVIEW
 struct SettingsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsRowView(name:"Developer", content:"John / Jane")
-            .previewLayout(.fixed(width: 375, height: 60))
+        Group {
+            SettingsRowView(name:"Developer", content:"John / Jane")
+                .previewLayout(.fixed(width: 375, height: 60))
             .padding(.vertical, 4)
+            SettingsRowView(name: "Website", linkLabel: "SwiftUI Masterclass", linkDestination: "swiftuimasterclass.com")
+                .previewLayout(.fixed(width: 375, height: 60))
+                .padding(.vertical, 4)
+        }
+
     }
 }
+
