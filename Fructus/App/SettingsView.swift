@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     //MARK: PROPERTIES
     @Environment(\.presentationMode) var presentationMode
-    @AppStorage("isOnboardingView") var isOnboarding: Bool = false
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
     //MARK: BODY
     var body: some View {
         NavigationView {
@@ -19,7 +19,7 @@ struct SettingsView: View {
                     //MARK: SECTION 1
                     GroupBox(
                         label:
-                            SettingsLabelView(labelText: "Fructus", labelImage: "circle.info")
+                            SettingsLabelView(labelText: "Fructus", labelImage: "info.circle")
                     ) {
                         Divider().padding(.vertical,4)
                         
@@ -47,9 +47,23 @@ struct SettingsView: View {
                             .layoutPriority(1)
                             .font(.footnote)
                             .multilineTextAlignment(.leading)
+                        
                         Toggle(isOn: $isOnboarding){
-                            Text("Restart".uppercased())
+                            if isOnboarding {
+                                Text("Restarted".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.green)
+                            } else {
+                                Text("Restart".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.secondary)
+                            }
                         }
+                        .padding()
+                        .background(
+                            Color(UIColor.tertiarySystemBackground)
+                                .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                        )
                     }//:Box
                     
                     //MARK: SECTION 3
