@@ -18,11 +18,7 @@ struct SettingsView: View {
                     //MARK: SECTION 1
                     GroupBox(
                         label:
-                            HStack {
-                                Text("Fructus".uppercased()).fontWeight(.bold)
-                                Spacer()
-                                Image(systemName: "info.circle")
-                            }
+                            SettingsLabelView(labelText: "Fructus", labelImage: "circle.info")
                     ) {
                         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
                     }
@@ -30,7 +26,7 @@ struct SettingsView: View {
                     //MARK: SECTION 2
                     
                     //MARK: SECTION 3
-
+ 
                 }//: VStack
                 .navigationBarTitle(Text("SETTINGS"), displayMode: .large)
                 .navigationBarItems(
