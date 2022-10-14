@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct SettingsRowView: View {
+        //MARK: PROPERTIES
+        var name: String
+        var content : String
+    
+        //MARK: BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Text(name).foregroundColor(.gray)
+            Spacer()
+            Text(content)
+        }
     }
 }
-
+//MARK: PREVIEW
 struct SettingsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsRowView()
+        SettingsRowView(name:"Developer", content:"John / Jane")
+            .previewLayout(.fixed(width: 375, height: 60))
+            .padding(.vertical, 4)
     }
 }
