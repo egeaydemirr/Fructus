@@ -34,12 +34,26 @@ struct SettingsView: View {
                     }
                     
                     //MARK: SECTION 2
+                    GroupBox(
+                        label:
+                            SettingsLabelView(labelText: "Customization", labelImage: "paintbrush")
+                    ){
+                        Divider().padding(.vertical, 4)
+                        
+                        Text("If you wish, you can restart the application by toggle the switch in this box. That way it starts the onboarding process and you will see the welcome screen again.")
+                            .padding(.vertical, 4)
+                            .frame(minWidth: 60)
+                            .layoutPriority(1)
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading)
+                        
+                    }//:Box
                     
                     //MARK: SECTION 3
                     GroupBox(
                         label:
                             SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
-                    ) { 
+                    ) {
                         SettingsRowView(name: "Developer", content: "John / Jane")
                         SettingsRowView(name: "Designer", content: "Robert Petras")
                         SettingsRowView(name: "Compatibility", content: "iOS 14")
