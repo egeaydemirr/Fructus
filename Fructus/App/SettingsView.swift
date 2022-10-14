@@ -39,9 +39,7 @@ struct SettingsView: View {
                     GroupBox(
                         label:
                             SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
-                    ) {
-                        Divider().padding(.vertical, 4)
-                        
+                    ) { 
                         SettingsRowView(name: "Developer", content: "John / Jane")
                         SettingsRowView(name: "Designer", content: "Robert Petras")
                         SettingsRowView(name: "Compatibility", content: "iOS 14")
